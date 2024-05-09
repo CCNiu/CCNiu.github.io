@@ -6,25 +6,23 @@
             CCNIU
         </title>
         <style>
+            
             .br{
                 border-radius:10px;
-                background-color: rgb(134, 218, 237);
+                background-color: rgb(255, 255, 255);
                 padding: 10px;
-                margin-bottom: 10px;
-                margin: 15px;
+                margin: 15px 5% 10px;
                 border: 10px;
             }
-            .br1{
+            .person_intro{
                 border-radius:10px;
-                background-color: rgb(141, 210, 233);
-                margin-bottom: 5px;
                 padding: 10px;
-                margin: 10px;
+                margin: 10px 10%;
                 border: 10px;
             }
             .testtext{
                 margin-left: 10px;
-                color: black;
+                color: rgb(0, 0, 0);
             }
             .leftcolumn{
                 width: 50%;
@@ -39,46 +37,58 @@
                 flex-direction: row;
                 gap: 5px;
                 flex-wrap: wrap ;
-
+            }
+            .footer{
+                background-color: black;
+                color: azure;
+                text-align: center;
+                padding:20px
             }
         </style>
     </head>
     <body>
         <div class="flex_container">
-            <div class="br1">
-                <img src="E94096055-2.jpg" style="object-fit: cover ;border-radius: 10px; width: 25%; height: auto; display:block;">
-                <h2 class="testtext">牛俊傑</h2>
-                <p class="testtext">國立師範大學附屬高級中學1468&1461</p>
-                <p class="testtext">國立成功大學工程科學系113級</p>
-                <p class="testtext">電話:0966708350</p>
-                <p class="testtext">
-                    <A href="https://github.com/CCNiu" target="_blank"> Github</A>
-                </p>
+            <div class="person_intro">
+                <div class= "leftcolumn">
+                    <img src="002.jpg" style="object-fit: cover; border-radius: 10px; width: 60%; height: auto; display:block;">
+                </div>
+                <div class = "rightcolumn">
+                    <h2 class="testtext">牛俊傑</h2>
+                    <p class="testtext">國立師範大學附屬高級中學1468&1461</p>
+                    <p class="testtext">國立成功大學工程科學系113級</p>
+                    <p class="testtext">電子信箱:</p>
+                    <p class="testtext">
+                        <a href="mailto:chunchieh.niu@gmail.com"  >chunchieh.niu@gmail.com</a>
+                    </p>
+                    <p class="testtext">
+                        <A href="https://github.com/CCNiu" target="_blank" > Github </A>
+                    </p>
+                </div>
             </div>
-            <div class="br">
-                <h1>
-                    Projects
-                </h1>
-                <h3>
-                    羽毛球發球機
-                </h3>
-                <p>
-                    2022/09~2023/10<br>
-                    自動控制 / C / 微處理器 / Solidwork<br>
-                    國立成功大學工程科學系112學年度專題研究比賽特優
-                </p>
-                <h3>
-                    羽毛球撿球機
-                </h3>
-                <p>
-                    2023/09~2024/06<br>
-                    自動控制 / C / 微處理器 / Solidwork / ML<br>
-                    製作中...
-                </p>
-            </div>
+            
         </div>
-
-        <footer>
+        <div class="br">
+            <h1>
+                Projects
+            </h1>
+            <h2>
+                羽毛球發球機
+            </h2>
+            <p>
+                2022/09~2023/10<br>
+                自動控制 / C / 微處理器 / Solidwork<br>
+                國立成功大學工程科學系112學年度專題研究比賽特優
+            </p>
+            <h3>
+                羽毛球撿球機
+            </h3>
+            <p>
+                2023/09~2024/06<br>
+                自動控制 / C / 微處理器 / Solidwork / ML<br>
+                製作中...
+            </p>
+        </div>
+        <footer class = "footer">
             <p>
                 CCNIU
             </p>
