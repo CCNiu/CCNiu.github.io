@@ -1,97 +1,135 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            CCNIU
-        </title>
-        <style>
-            
-            .br{
-                border-radius:10px;
-                background-color: rgb(255, 255, 255);
-                padding: 10px;
-                margin: 15px 5% 10px;
-                border: 10px;
-            }
-            .person_intro{
-                border-radius:10px;
-                padding: 10px;
-                margin: 10px 10%;
-                border: 10px;
-            }
-            .testtext{
-                margin-left: 10px;
-                color: rgb(0, 0, 0);
-            }
-            .leftcolumn{
-                width: 50%;
-                float: left;
-            }
-            .rightcolumn{
-                width: 50%;
-                float: right;
-            }
-            .flex_container{
-                display:flex;
-                flex-direction: row;
-                gap: 5px;
-                flex-wrap: wrap ;
-            }
-            .footer{
-                background-color: black;
-                color: azure;
-                text-align: center;
-                padding:20px
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex_container">
-            <div class="person_intro">
-                <div class= "leftcolumn">
-                    <img src="002.jpg" style="object-fit: cover; border-radius: 10px; width: 60%; height: auto; display:block;">
-                </div>
-                <div class = "rightcolumn">
-                    <h2 class="testtext">牛俊傑</h2>
-                    <p class="testtext">國立師範大學附屬高級中學1468&1461</p>
-                    <p class="testtext">國立成功大學工程科學系113級</p>
-                    <p class="testtext">電子信箱:</p>
-                    <p class="testtext">
-                        <a href="mailto:chunchieh.niu@gmail.com"  >chunchieh.niu@gmail.com</a>
-                    </p>
-                    <p class="testtext">
-                        <A href="https://github.com/CCNiu" target="_blank" > Github </A>
-                    </p>
-                </div>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8" />
+    <title>CCNIU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* 通用樣式 */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* 個人資訊卡片 */
+        .intro-card {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .intro-photo {
+            flex: 0 0 220px;
+            margin-right: 20px;
+        }
+        .intro-photo img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .intro-info {
+            flex: 1;
+        }
+        .intro-info h1 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #2b3a67;
+        }
+        .intro-info p {
+            margin: 6px 0;
+        }
+        .intro-info a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .intro-info a:hover {
+            text-decoration: underline;
+        }
+        /* 專案區塊 */
+        .projects {
+            margin: 40px 0;
+        }
+        .projects h2 {
+            font-size: 1.8em;
+            color: #2b3a67;
+            margin-bottom: 20px;
+        }
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #34495e;
+        }
+        .project-card p {
+            margin: 6px 0;
+        }
+        /* 頁腳 */
+        footer {
+            background-color: #2b3a67;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 0 0 10px 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 個人資訊 -->
+        <section class="intro-card">
+            <div class="intro-photo">
+                <img src="002.jpg" alt="個人照片" />
             </div>
-            
-        </div>
-        <div class="br">
-            <h1>
-                Projects
-            </h1>
-            <h2>
-                羽毛球發球機
-            </h2>
-            <p>
-                2022/09~2023/10<br>
-                自動控制 / C / 微處理器 / Solidwork<br>
-                國立成功大學工程科學系112學年度專題研究比賽特優
-            </p>
-            <h3>
-                羽毛球撿球機
-            </h3>
-            <p>
-                2023/09~2024/06<br>
-                自動控制 / C / 微處理器 / Solidwork / ML<br>
-                製作中...
-            </p>
-        </div>
-        <footer class = "footer">
-            <p>
-                CCNIU
-            </p>
-        </footer>
-    </body>
+            <div class="intro-info">
+                <h1>牛俊傑</h1>
+                <p>國立師範大學附屬高級中學 1468 &amp; 1461</p>
+                <p>國立成功大學工程科學系 113 級</p>
+                <p>
+                    電子信箱：<br />
+                    <a href="mailto:chunchieh.niu@gmail.com">chunchieh.niu@gmail.com</a>
+                </p>
+                <p>
+                    <a href="https://github.com/CCNiu" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </section>
+        <!-- 專案列表 -->
+        <section class="projects">
+            <h2>專案作品</h2>
+            <div class="project-card">
+                <h3>羽毛球發球機</h3>
+                <p>2022/09&nbsp;–&nbsp;2023/10</p>
+                <p>自動控制／C／微處理器／Solidwork</p>
+                <p>國立成功大學工程科學系 112 學年度專題研究比賽特優</p>
+            </div>
+            <div class="project-card">
+                <h3>羽毛球撿球機</h3>
+                <p>2023/09&nbsp;–&nbsp;2024/06</p>
+                <p>自動控制／C／微處理器／Solidwork／機器學習</p>
+                <p>製作中...</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        © 2025 牛俊傑
+    </footer>
+</body>
 </html>
