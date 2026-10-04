@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-title-en="Badminton Serving Machine | CCNIU Projects">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>羽毛球發球機 | CCNIU 專案</title>
+<meta name="description" content="結合自動控制與機構設計的羽毛球發球機,可模擬不同球路。國立成功大學工程科學系 112 學年度專題研究比賽特優。">
+<meta property="og:title" content="羽毛球發球機 | CCNIU 專案">
+<meta property="og:description" content="自動控制 × 機構設計 × 微控制器 — 成大工科專題特優作品">
+<script>
+// 提前套用主題,避免深色使用者看到白色閃爍
+(function(){
+  var t = localStorage.getItem('theme');
+  if(!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="../index.html"><span class="dot"></span>CCNIU-01 <span class="rev">REV.2026</span></a>
+    <div class="nav-right">
+      <nav class="links" aria-label="主導覽">
+        <a href="../index.html#about" data-en="About">關於我</a>
+        <a href="../index.html#skills" data-en="Skills">技能</a>
+        <a href="../index.html#projects" data-en="Projects">專案</a>
+        <a href="../index.html#experience" data-en="Experience">經歷</a>
+        <a href="../index.html#contact" data-en="Contact">聯絡</a>
+      </nav>
+      <div class="switches">
+        <button id="lang-btn" class="sw" aria-label="Switch language / 切換語言">EN</button>
+        <button id="theme-btn" class="sw" aria-label="切換深淺色主題">☾</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ======== 專案標頭 ======== -->
+<section class="dsheet-hero">
+  <div class="wrap">
+    <a class="back" href="../index.html#projects" data-en="← BACK TO PROJECTS">← 返回專案列表</a>
+    <span class="eyebrow">Application Note · AN-001</span>
+    <h1 data-en="Badminton Serving Machine">羽毛球發球機</h1>
+    <div class="dsheet-meta">
+      <span>2022/09 – 2023/10</span>
+      <span class="award" data-en="★ Best Capstone Award">★ 專題特優獎</span>
+      <span>NCKU Engineering Science</span>
+    </div>
+    <p class="summary" data-en="A badminton serving machine combining <strong>automatic control and mechanical design</strong>, capable of simulating different shot trajectories — clears, drives, and net drops — for solo training. Won the Distinction Award at NCKU Engineering Science's capstone competition (AY 2023).">
+      結合<strong>自動控制與機構設計</strong>的羽毛球發球機,能模擬高遠球、平抽球、小球等不同球路,
+      讓球員能獨自進行接球訓練。獲得國立成功大學工程科學系 112 學年度專題研究比賽<strong>特優</strong>。
+    </p>
+    <div class="cta">
+      <a class="btn btn-ghost" href="https://github.com/CCNiu/-ES-Badminton-Serving-Machine-and-Motor-Control" target="_blank" rel="noopener">GitHub Repo →</a>
+    </div>
+    <div class="tags" style="margin-top:22px">
+      <span>C++</span><span>Microcontroller</span><span>SolidWorks</span><span data-en="Control">自動控制</span><span data-en="Mechanical Design">機構設計</span>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 實機照片 ======== -->
+<section class="dsheet-section">
+  <div class="wrap">
+    <span class="eyebrow">Figures</span>
+    <h2 data-en="Photos &amp; Demo">實機照片與展示</h2>
+    <div class="figs">
+      <figure class="fig reveal">
+        <span class="corner c1"></span><span class="corner c2"></span>
+        <span class="corner c3"></span><span class="corner c4"></span>
+        <div class="ph" data-en="FIG.1 — Machine overview (photo TBD)">FIG.1 — 整機外觀(照片待補)</div>
+        <figcaption data-en="FIG.1 — MACHINE OVERVIEW">FIG.1 — 整機外觀</figcaption>
+      </figure>
+      <figure class="fig reveal">
+        <span class="corner c1"></span><span class="corner c2"></span>
+        <span class="corner c3"></span><span class="corner c4"></span>
+        <div class="ph" data-en="FIG.2 — Serving mechanism close-up (photo TBD)">FIG.2 — 發球機構特寫(照片待補)</div>
+        <figcaption data-en="FIG.2 — SERVING MECHANISM">FIG.2 — 發球機構</figcaption>
+      </figure>
+      <figure class="fig reveal">
+        <span class="corner c1"></span><span class="corner c2"></span>
+        <span class="corner c3"></span><span class="corner c4"></span>
+        <div class="ph" data-en="FIG.3 — Control circuit (photo TBD)">FIG.3 — 控制電路(照片待補)</div>
+        <figcaption data-en="FIG.3 — CONTROL CIRCUIT">FIG.3 — 控制電路</figcaption>
+      </figure>
+      <figure class="fig reveal">
+        <span class="corner c1"></span><span class="corner c2"></span>
+        <span class="corner c3"></span><span class="corner c4"></span>
+        <div class="ph" data-en="FIG.4 — Demo video (TBD)">FIG.4 — 展示影片(待補)</div>
+        <figcaption data-en="FIG.4 — DEMO">FIG.4 — 實際發球展示</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 開發動機 ======== -->
+<section class="dsheet-section">
+  <div class="wrap">
+    <span class="eyebrow">General Description</span>
+    <h2 data-en="Motivation">開發動機</h2>
+    <p data-en="【TBD: Replace with your own story】Badminton practice usually requires a partner to feed shuttlecocks. For players who want to drill specific shots repeatedly — high clears, drives, net drops — a serving machine that can reproduce consistent, adjustable trajectories makes solo training possible.">
+      【待補:換成你自己的故事】羽球練習通常需要有人餵球,想要重複訓練特定球路
+      (高遠球、平抽球、小球)的球員很難獨自練習。一台能穩定重現、且可調整球路的發球機,
+      能讓單人訓練成為可能。
+    </p>
+    <p data-en="【TBD】Why this problem interested you, what the initial goals were, and what constraints you set (budget, size, materials...).">
+      【待補】為什麼想做這個題目、最初設定的目標、以及當時的限制條件(預算、尺寸、材料⋯)。
+    </p>
+  </div>
+</section>
+
+<!-- ======== 系統架構 ======== -->
+<section class="dsheet-section">
+  <div class="wrap">
+    <span class="eyebrow">Block Diagram</span>
+    <h2 data-en="System Architecture">系統架構</h2>
+    <div class="arch">
+      <div class="pin reveal">
+        <h3><span class="tag">ME</span><span data-en="Mechanism">機構設計</span></h3>
+        <p data-en="【TBD】Dual-wheel launcher, pitch/yaw adjustment, shuttlecock feeding mechanism. Designed in SolidWorks, fabricated with 3D printing and CNC parts.">
+          【待補】雙輪發射結構、俯仰/水平角度調整、羽球供球機構。
+          以 SolidWorks 設計,搭配 3D 列印與加工件製作。
+        </p>
+      </div>
+      <div class="pin reveal">
+        <h3><span class="tag">HW</span><span data-en="Electronics">電路控制</span></h3>
+        <p data-en="【TBD】Microcontroller + motor drivers. Motor speed control determines shot power; servo motors adjust launch angle.">
+          【待補】微控制器 + 馬達驅動電路。以馬達轉速控制球速,
+          伺服馬達調整發射角度。
+        </p>
+      </div>
+      <div class="pin reveal">
+        <h3><span class="tag">SW</span><span data-en="Software">軟體韌體</span></h3>
+        <p data-en="【TBD】C++ firmware: shot-type presets mapping to wheel speed / angle combinations, serving interval timer, user interface.">
+          【待補】C++ 韌體:球路預設檔(轉速/角度組合)、發球間隔計時、操作介面。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 規格表 ======== -->
+<section class="dsheet-section">
+  <div class="wrap">
+    <span class="eyebrow">Electrical Characteristics</span>
+    <h2 data-en="Specifications">性能規格</h2>
+    <div class="spec reveal">
+      <div class="spec-head"><span data-en="Parameter">項目 Parameter</span><span data-en="Description">說明 Description</span><span style="text-align:right">Typ.</span></div>
+      <div class="spec-row"><span class="name" data-en="Shot types">可模擬球路</span><span style="font-size:13.5px;color:var(--ink-soft)" data-en="【TBD】High clear / drive / net drop">【待補】高遠球 / 平抽球 / 小球</span><span class="val">3</span></div>
+      <div class="spec-row"><span class="name" data-en="Serving rate">發球頻率</span><span style="font-size:13.5px;color:var(--ink-soft)" data-en="【TBD】Adjustable interval">【待補】可調整間隔</span><span class="val">— /min</span></div>
+      <div class="spec-row"><span class="name" data-en="Launch angle">發射角度</span><span style="font-size:13.5px;color:var(--ink-soft)" data-en="【TBD】Pitch / yaw range">【待補】俯仰/水平可調範圍</span><span class="val">— °</span></div>
+      <div class="spec-row"><span class="name" data-en="Power">供電</span><span style="font-size:13.5px;color:var(--ink-soft)" data-en="【TBD】Battery or adapter spec">【待補】電池或變壓器規格</span><span class="val">— V</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 開發歷程 ======== -->
+<section class="dsheet-section">
+  <div class="wrap">
+    <span class="eyebrow">Revision History</span>
+    <h2 data-en="Development Timeline">開發歷程</h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="date">2022/09</div>
+        <h3 data-en="Project kickoff &amp; research">題目確立與調研</h3>
+        <p data-en="【TBD】Surveyed existing serving machines, defined feature set and mechanical approach.">【待補】調查市面發球機、確立功能規格與機構方案。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="date">2023/02</div>
+        <h3 data-en="First prototype">第一版原型</h3>
+        <p data-en="【TBD】First working launcher. What worked, what failed (e.g., wheel material grip, feeding jams...).">【待補】第一版能發球的原型。哪些成功、哪些失敗(例如輪子抓力、供球卡球⋯)。</p>
+      </div>
+      <div class="tl-item reveal">
+        <div class="date">2023/06</div>
+        <h3 data-en="Control integration">控制整合</h3>
+        <p data-en="【TBD】Closed the loop between firmware presets and mechanism: repeatable shot trajectories.">【待補】韌體球路預設與機構整合,達成可重現的球路。</p>
+      </div>
+      <div class="tl-item cur reveal">
+        <div class="date">2023/10</div>
+        <h3 data-en="Capstone competition — Distinction Award">專題競賽 — 特優</h3>
+        <p data-en="Won the Distinction Award at NCKU Engineering Science's AY 2023 capstone competition.">獲得成大工科 112 學年度專題研究比賽特優獎。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======== 學到什麼 ======== -->
+<section class="dsheet-section">
+  <div class="wrap">
+    <span class="eyebrow">Lessons Learned</span>
+    <h2 data-en="What I Learned">學到什麼</h2>
+    <ul>
+      <li data-en="【TBD】e.g., Mechanical tolerance matters more than simulation suggests — the feeding mechanism jammed until we...">【待補】例如:機構公差比模擬重要——供球機構一直卡球,直到我們⋯</li>
+      <li data-en="【TBD】e.g., Tuning motor PWM against real shuttlecock behavior taught me...">【待補】例如:對著真實羽球行為調馬達 PWM,讓我學到⋯</li>
+      <li data-en="【TBD】e.g., Team collaboration / task splitting between ME, HW, SW...">【待補】例如:機構/電路/軟體的團隊分工經驗⋯</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ======== 頁尾導覽 ======== -->
+<div class="wrap dsheet-next">
+  <a href="../index.html#projects" data-en="← ALL PROJECTS">← 所有專案</a>
+  <a href="https://github.com/CCNiu/-ES-Badminton-Serving-Machine-and-Motor-Control" target="_blank" rel="noopener">GITHUB REPO →</a>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="brand-lg">CCNIU</div>
+    <p data-en="Thanks for visiting. If you're interested in software/firmware integration, AI applications, or any collaboration, feel free to reach out.">感謝您的瀏覽。如果你對軟韌體整合、AI 應用或任何合作機會有興趣,歡迎隨時與我聯繫。</p>
+    <div class="f-links">
+      <a href="mailto:chunchieh.niu@gmail.com">✉ chunchieh.niu@gmail.com</a>
+      <a href="https://github.com/CCNiu" target="_blank" rel="noopener">GitHub / CCNiu</a>
+    </div>
+    <div class="copy">
+      <span>© 2026 牛俊傑 CHUN-CHIEH NIU</span>
+      <span>DATASHEET AN-001 · MADE IN TAINAN</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>
